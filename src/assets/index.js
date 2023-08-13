@@ -1,5 +1,4 @@
 import logo from "./logo.png";
-import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -22,20 +21,12 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import technopartner from "./company/technopartner.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import resume from "./resume/resume.pdf";
+import netflix from "./netflix-next-mui.png";
 
 export {
   logo,
-  backend,
   creator,
   mobile,
   web,
@@ -56,13 +47,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   technopartner,
-  carrent,
-  jobit,
-  tripguide,
-  resume,
+  netflix
 };

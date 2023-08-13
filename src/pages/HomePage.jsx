@@ -23,8 +23,8 @@ const HomePage = () => {
       <About />
       <Experience />
       <Tech data={technologiesData} />
-      {/* <Works /> */}
-      {/* <Feedbacks /> */}
+      <Works />
+      <Feedbacks />
       <div className='relative z-0'>
         <Contact />
         <StarsCanvas />

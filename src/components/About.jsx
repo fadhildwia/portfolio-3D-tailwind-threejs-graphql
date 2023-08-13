@@ -37,6 +37,21 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('resume.pdf').then(response => {
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'resume.pdf';
+        alink.click();
+      })
+    })
+  }
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -53,9 +68,9 @@ const About = () => {
         the field of web and mobile development. I am able to collaborate with backend developers, implement APIs, solve
         problems, learn quickly, and take responsibility.
       </motion.p>
-      <a className="mt-5 flex" href={"../assets/resume/resume.pdf"} target={"_blank"} download={true}>
+      <div className="mt-5 flex cursor-pointer" onClick={onButtonClick}>
         Resume <img src={linkArrow} height={20} width={20} className="ml-2" alt="arrow" />
-      </a>
+      </div>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

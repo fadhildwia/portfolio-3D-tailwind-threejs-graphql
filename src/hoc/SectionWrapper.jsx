@@ -16,9 +16,9 @@ const StarWrapper = (Component, idName) => {
         &nbsp;
       </span>
 
-      <Component { ...props } />
+      <Component {...props} />
     </motion.section>
   )
 };
 
-export default StarWrapper;
+export default StarWrapper
