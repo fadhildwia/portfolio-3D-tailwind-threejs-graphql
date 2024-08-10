@@ -9,8 +9,8 @@
 ### Detail
 
 <h1 align="center">
-  <img alt="MovieApps" title="MovieApps" src="./github/home.png" height="425" />
-  <img alt="MovieApps" title="MovieApps" src="./github/full.gif" height="403" />
+  <img alt="MovieApps" title="MovieApps" src="./github/home.png" width="955" />
+  <img alt="MovieApps" title="MovieApps" src="./github/full.gif" width="800" />
 </h1>
 
 ## 📱 Features
